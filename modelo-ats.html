@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- Troque o título e os metadados pelos seus. O título aparece nas propriedades do PDF e pode ser lido por sistemas de triagem. -->
+  <title>Seu Nome - Desenvolvedor(a) Full Stack (Node.js + TypeScript + React)</title>
+  <meta name="author" content="Seu Nome">
+  <meta name="description" content="Desenvolvedor(a) Full Stack com Node.js, TypeScript, React e AWS. Troque pela sua descrição.">
+  <meta name="keywords" content="Full Stack, Node.js, TypeScript, React, AWS, APIs REST, Testes, CI/CD">
+  <meta name="subject" content="Desenvolvedor(a) Full Stack com [X] anos de experiência. Troque pelo seu resumo.">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 10pt;
+      line-height: 1.38;
+      color: #1a1a1a;
+      background: #fff;
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 12mm 16mm 10mm;
+    }
+
+    /* Header */
+    header {
+      padding-bottom: 6px;
+      border-bottom: 1.5px solid #1a1a1a;
+      margin-bottom: 8px;
+    }
+    header h1 {
+      font-size: 20pt;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+    header .role {
+      font-size: 10pt;
+      color: #333;
+      margin-bottom: 3px;
+    }
+    header .contacts {
+      font-size: 9.5pt;
+      color: #333;
+    }
+    header .contacts span { display: inline-block; margin-right: 10px; }
+
+    /* Section */
+    section { margin-bottom: 7px; }
+    section h2 {
+      font-size: 9.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 0.7px solid #555;
+      padding-bottom: 1px;
+      margin-bottom: 4px;
+    }
+
+    /* Summary */
+    .summary { font-size: 10pt; line-height: 1.42; }
+
+    /* Skills */
+    .skills-list p {
+      font-size: 9.8pt;
+      margin-bottom: 2px;
+      line-height: 1.38;
+    }
+
+    /* Experience */
+    .job { margin-bottom: 5px; }
+    .job-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .job-title { font-weight: 700; font-size: 10pt; }
+    .job-date { font-size: 9pt; color: #555; white-space: nowrap; margin-left: 8px; }
+    .job-company { font-size: 9.5pt; color: #555; font-style: italic; margin-bottom: 2px; }
+    ul { padding-left: 17px; }
+    li { font-size: 9.8pt; margin-bottom: 2px; line-height: 1.38; }
+
+    /* Education */
+    .edu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+    .edu-left { flex: 1; }
+    .edu-school { font-weight: 700; font-size: 10pt; }
+    .edu-degree { font-size: 9.5pt; color: #444; }
+    .edu-date { font-size: 9pt; color: #555; white-space: nowrap; margin-left: 8px; }
+
+    /* Print */
+    @media print {
+      body { padding: 11mm 15mm 9mm; }
+      @page { size: A4; margin: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<!--
+  MODELO DE CURRÍCULO ATS (uma coluna, texto puro, sem ícones nem tabelas)
+  Todos os dados abaixo são fictícios. Troque o que está em [colchetes] e o que parecer exemplo.
+  Para gerar o PDF: abra este arquivo no navegador, Ctrl+P, destino "Salvar como PDF", papel A4, margens "Nenhuma".
+-->
+
+<!-- HEADER -->
+<header>
+  <h1>Seu Nome</h1>
+  <div class="role">Desenvolvedor(a) Full Stack | Node.js | TypeScript | React | AWS</div>
+  <div class="contacts">
+    <span>E-mail: seuemail@exemplo.com</span>
+    <span>LinkedIn: <a href="https://www.linkedin.com/in/seu-perfil">linkedin.com/in/seu-perfil</a></span>
+    <span>Portfólio: <a href="https://seu-portfolio.dev">seu-portfolio.dev</a></span>
+  </div>
+</header>
+
+<!-- RESUMO -->
+<section>
+  <h2>Resumo</h2>
+  <p class="summary">
+    Desenvolvedor(a) Full Stack com [X] anos de experiência e [N] projetos em Node.js, TypeScript e React. Experiência em APIs REST, microsserviços com filas, AWS e testes automatizados. Certificação [nome da certificação], inglês [nível], mentoria de pessoas desenvolvedoras iniciantes.
+  </p>
+</section>
+
+<!-- EXPERIÊNCIA -->
+<section>
+  <h2>Experiência Profissional</h2>
+
+  <div class="job">
+    <div class="job-top">
+      <span class="job-title">Desenvolvedor(a) Full Stack Pleno</span>
+      <span class="job-date">01/2025 - Atual</span>
+    </div>
+    <div class="job-company">Empresa Exemplo A</div>
+    <ul>
+      <li>Desenvolvi [funcionalidade ou sistema] em Node.js e TypeScript, reduzindo [métrica] em ~[X]%.</li>
+      <li>Entreguei aplicações React em TypeScript consumindo APIs REST, com deploy automatizado via CI/CD.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top">
+      <span class="job-title">Desenvolvedor(a) Full Stack Júnior</span>
+      <span class="job-date">03/2023 - 12/2024</span>
+    </div>
+    <div class="job-company">Empresa Exemplo B</div>
+    <ul>
+      <li>Construí APIs em Node.js com integrações assíncronas e [X]% de cobertura de testes com Jest.</li>
+      <li>Criei componentes reutilizáveis em React/TS e apoiei pessoas iniciantes com code review e pareamento.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top">
+      <span class="job-title">Desenvolvedor(a) Backend Estagiário(a)</span>
+      <span class="job-date">06/2022 - 02/2023</span>
+    </div>
+    <div class="job-company">Empresa Exemplo C</div>
+    <ul>
+      <li>Implementei serviços em Java Spring Boot com [X]% de cobertura em JUnit, usando serviços AWS como Lambda, SQS e S3.</li>
+    </ul>
+  </div>
+
+</section>
+
+<!-- PROJETOS -->
+<section>
+  <h2>Projetos</h2>
+
+  <div class="job">
+    <div class="job-top">
+      <span class="job-title">Nome do Projeto - Descrição curta</span>
+      <span class="job-date">01/2025 - Atual</span>
+    </div>
+    <div class="job-company">Projeto pessoal ou freelance - <a href="https://seu-portfolio.dev">seu-portfolio.dev</a></div>
+    <ul>
+      <li>Aplicação ponta a ponta com React, Node.js e PostgreSQL. Descreva o problema que resolve, a decisão técnica mais importante e o resultado.</li>
+    </ul>
+  </div>
+
+</section>
+
+<!-- FORMAÇÃO -->
+<section>
+  <h2>Formação e Certificações</h2>
+  <div class="edu-item">
+    <div class="edu-left">
+      <div class="edu-school">Universidade Exemplo</div>
+      <div class="edu-degree">Pós-Graduação - Nome do Curso</div>
+    </div>
+    <div class="edu-date">01/2025 - 12/2025</div>
+  </div>
+  <div class="edu-item">
+    <div class="edu-left">
+      <div class="edu-school">Faculdade Exemplo</div>
+      <div class="edu-degree">Tecnólogo em Desenvolvimento de Software</div>
+    </div>
+    <div class="edu-date">02/2020 - 12/2022</div>
+  </div>
+  <div class="edu-item">
+    <div class="edu-left">
+      <div class="edu-school">Entidade Certificadora</div>
+      <div class="edu-degree">Nome da Certificação (ex.: AWS Certified Cloud Practitioner)</div>
+    </div>
+    <div class="edu-date">2024</div>
+  </div>
+</section>
+
+<!-- COMPETÊNCIAS -->
+<section>
+  <h2>Competências Técnicas</h2>
+  <div class="skills-list">
+    <p><strong>Linguagens:</strong> TypeScript, JavaScript, Java, HTML, CSS.</p>
+    <p><strong>Frontend:</strong> React, Next.js, Tailwind, Storybook.</p>
+    <p><strong>Backend:</strong> Node.js, Java Spring Boot, APIs REST, microsserviços, OAuth2/JWT.</p>
+    <p><strong>Banco de Dados e Cloud:</strong> PostgreSQL, MongoDB, AWS (Lambda, S3, SQS, Cognito), Docker, CI/CD, Git.</p>
+    <p><strong>Arquitetura e Práticas:</strong> Clean Code, SOLID, Design Patterns, event-driven, filas, testes unitários (Jest, JUnit), code review.</p>
+    <p><strong>Metodologia:</strong> Ágil, Scrum, Jira, pareamento.</p>
+    <p><strong>Idiomas:</strong> Português (nativo), Inglês ([nível]).</p>
+  </div>
+</section>
+
+</body>
+</html>
